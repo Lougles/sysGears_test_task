@@ -1,7 +1,7 @@
 import {Condition, Result, DataItem} from './types'
-function process_data(data: DataItem[], condition: Condition): Result {
+function process(data: DataItem[], condition: Condition): Result {
     const filter = applyCondition(data, condition);
-    const sortedData = sort_data(filter, condition.sortBy || []);
+    const sortedData = sort(filter, condition.sortBy || []);
     return { result: sortedData };
 }
 
@@ -55,7 +55,7 @@ function checkExcludeRules(item: DataItem, excludeRule: DataItem[]): boolean {
     }
     return true;
 }
-function sort_data(data: DataItem[], sortBy: string[]): DataItem[] {
+function sort(data: DataItem[], sortBy: string[]): DataItem[] {
     return data.sort((a, b) => {
         for (const key of sortBy) {
             if (a[key] < b[key]) {
@@ -68,4 +68,4 @@ function sort_data(data: DataItem[], sortBy: string[]): DataItem[] {
     });
 }
 
-export {process_data}
+export {process}

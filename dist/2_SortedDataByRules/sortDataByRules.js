@@ -2,12 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.process_data = void 0;
 function process_data(data, condition) {
-    // console.log("Data:", data);
-    // console.log("Condition:", condition);
     const filter = applyCondition(data, condition);
-    // console.log("Filtered Data:", filter);
     const sortedData = sort_data(filter, condition.sortBy || []);
-    // console.log("Sorted Data:", sortedData);
     return { result: sortedData };
 }
 exports.process_data = process_data;
