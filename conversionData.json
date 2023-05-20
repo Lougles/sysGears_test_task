@@ -1,0 +1,17 @@
+{
+  "units": ["m", "cm", "in", "ft", "mm", "yd", "km"],
+  "conversions": [
+    { "fromUnit": "m", "toUnit": "cm", "factor": 100 },
+    { "fromUnit": "cm", "toUnit": "m", "factor": 0.01 },
+    { "fromUnit": "in", "toUnit": "m", "factor": 0.0254 },
+    { "fromUnit": "m", "toUnit": "in", "factor": 39.37 },
+    { "fromUnit": "ft", "toUnit": "m", "factor": 0.3048 },
+    { "fromUnit": "m", "toUnit": "ft", "factor": 3.281 },
+    { "fromUnit": "mm", "toUnit": "m", "factor": 0.001 },
+    { "fromUnit": "m", "toUnit": "mm", "factor": 1000 },
+    { "fromUnit": "yd", "toUnit": "m", "factor": 0.9144 },
+    { "fromUnit": "m", "toUnit": "yd", "factor": 1.094 },
+    { "fromUnit": "km", "toUnit": "m", "factor": 1000 },
+    { "fromUnit": "m", "toUnit": "km", "factor": 0.001 }
+  ]
+}
